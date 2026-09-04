@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mission5-collectible-2d.loader.js";
+      var buildVersion = "ab0a713";
+      var loaderUrl = buildUrl + "/mission5-collectible-2d.loader.js?v=" + buildVersion;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/mission5-collectible-2d.data",
-        frameworkUrl: buildUrl + "/mission5-collectible-2d.framework.js",
-        codeUrl: buildUrl + "/mission5-collectible-2d.wasm",
+        dataUrl: buildUrl + "/mission5-collectible-2d.data?v=" + buildVersion,
+        frameworkUrl: buildUrl + "/mission5-collectible-2d.framework.js?v=" + buildVersion,
+        codeUrl: buildUrl + "/mission5-collectible-2d.wasm?v=" + buildVersion,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
@@ -72,7 +73,7 @@
 
         companyName: "DefaultCompany",
         productName: "My project",
-        productVersion: "3.0.1",
+        productVersion: "ab0a713",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);

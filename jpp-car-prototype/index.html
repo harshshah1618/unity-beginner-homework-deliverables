@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/jpp-car-prototype.loader.js";
+      var buildVersion = "ab0a713";
+      var loaderUrl = buildUrl + "/jpp-car-prototype.loader.js?v=" + buildVersion;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/jpp-car-prototype.data",
-        frameworkUrl: buildUrl + "/jpp-car-prototype.framework.js",
-        codeUrl: buildUrl + "/jpp-car-prototype.wasm",
+        dataUrl: buildUrl + "/jpp-car-prototype.data?v=" + buildVersion,
+        frameworkUrl: buildUrl + "/jpp-car-prototype.framework.js?v=" + buildVersion,
+        codeUrl: buildUrl + "/jpp-car-prototype.wasm?v=" + buildVersion,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
@@ -72,7 +73,7 @@
 
         companyName: "DefaultCompany",
         productName: "My project",
-        productVersion: "3.0.1",
+        productVersion: "ab0a713",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);

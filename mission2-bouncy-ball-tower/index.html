@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mission2-bouncy-ball-tower.loader.js";
+      var buildVersion = "ab0a713";
+      var loaderUrl = buildUrl + "/mission2-bouncy-ball-tower.loader.js?v=" + buildVersion;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/mission2-bouncy-ball-tower.data",
-        frameworkUrl: buildUrl + "/mission2-bouncy-ball-tower.framework.js",
-        codeUrl: buildUrl + "/mission2-bouncy-ball-tower.wasm",
+        dataUrl: buildUrl + "/mission2-bouncy-ball-tower.data?v=" + buildVersion,
+        frameworkUrl: buildUrl + "/mission2-bouncy-ball-tower.framework.js?v=" + buildVersion,
+        codeUrl: buildUrl + "/mission2-bouncy-ball-tower.wasm?v=" + buildVersion,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
@@ -72,7 +73,7 @@
 
         companyName: "DefaultCompany",
         productName: "My project",
-        productVersion: "3.0.1",
+        productVersion: "ab0a713",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
