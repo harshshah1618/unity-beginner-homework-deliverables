@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mission4-jump-and-door.loader.js";
+      var assetVersion = "9a36777";
+      var loaderUrl = buildUrl + "/mission4-jump-and-door.loader.js?v=" + assetVersion;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/mission4-jump-and-door.data",
-        frameworkUrl: buildUrl + "/mission4-jump-and-door.framework.js",
-        codeUrl: buildUrl + "/mission4-jump-and-door.wasm",
+        dataUrl: buildUrl + "/mission4-jump-and-door.data?v=" + assetVersion,
+        frameworkUrl: buildUrl + "/mission4-jump-and-door.framework.js?v=" + assetVersion,
+        codeUrl: buildUrl + "/mission4-jump-and-door.wasm?v=" + assetVersion,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
