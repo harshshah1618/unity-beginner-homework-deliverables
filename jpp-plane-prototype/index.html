@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/jpp-plane-prototype.loader.js?v=20260904-1";
+      var buildRevision = "20260906-physics-2";
+      var loaderUrl = buildUrl + "/jpp-plane-prototype.loader.js?v=" + buildRevision;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/jpp-plane-prototype.data?v=20260904-1",
-        frameworkUrl: buildUrl + "/jpp-plane-prototype.framework.js?v=20260904-1",
-        codeUrl: buildUrl + "/jpp-plane-prototype.wasm?v=20260904-1",
+        dataUrl: buildUrl + "/jpp-plane-prototype.data?v=" + buildRevision,
+        frameworkUrl: buildUrl + "/jpp-plane-prototype.framework.js?v=" + buildRevision,
+        codeUrl: buildUrl + "/jpp-plane-prototype.wasm?v=" + buildRevision,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
