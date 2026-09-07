@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/jpp-car-prototype.loader.js?v=20260903-2";
+      var buildRevision = "20260906-audit-1";
+      var loaderUrl = buildUrl + "/jpp-car-prototype.loader.js?v=" + buildRevision;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/jpp-car-prototype.data?v=20260903-2",
-        frameworkUrl: buildUrl + "/jpp-car-prototype.framework.js?v=20260903-2",
-        codeUrl: buildUrl + "/jpp-car-prototype.wasm?v=20260903-2",
+        dataUrl: buildUrl + "/jpp-car-prototype.data?v=" + buildRevision,
+        frameworkUrl: buildUrl + "/jpp-car-prototype.framework.js?v=" + buildRevision,
+        codeUrl: buildUrl + "/jpp-car-prototype.wasm?v=" + buildRevision,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
