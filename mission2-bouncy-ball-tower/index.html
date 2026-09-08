@@ -57,12 +57,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mission2-bouncy-ball-tower.loader.js?v=20260903-2";
+      var assetVersion = "20260908-room";
+      var loaderUrl = buildUrl + "/mission2-bouncy-ball-tower.loader.js?v=" + assetVersion;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/mission2-bouncy-ball-tower.data?v=20260903-2",
-        frameworkUrl: buildUrl + "/mission2-bouncy-ball-tower.framework.js?v=20260903-2",
-        codeUrl: buildUrl + "/mission2-bouncy-ball-tower.wasm?v=20260903-2",
+        dataUrl: buildUrl + "/mission2-bouncy-ball-tower.data?v=" + assetVersion,
+        frameworkUrl: buildUrl + "/mission2-bouncy-ball-tower.framework.js?v=" + assetVersion,
+        codeUrl: buildUrl + "/mission2-bouncy-ball-tower.wasm?v=" + assetVersion,
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
